@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Vinayak Weather App</title>
+</head>
+<body class="bg-[#222]">
+
+    <div class="card    text-center"> 
+        <div class="search w-[100%] flex items-center justify-between">
+            <input class="border-0 outline-none bg-[#ebfffc]  " type="text" placeholder="Enter city name" spellcheck="false">
+            <button class="cursor-pointer h-[60px] w-[60px] rounded-full bg-[#ebfffc] border-0 outline-none">
+                <img class="w-[16px] mx-auto" src="images/search.png"></button>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon mx-auto">
+            <h1 class="temp">22°c</h1>
+            <h1 class="city">New York</h1>
+            <div class="details flex  space-x-36">
+                <div class="col">
+                    <img src="images/humidity.png" class="mx-10">
+                    <div>
+                        &nbsp;
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                    &nbsp;
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" class="mx-[-5px]">
+                    <div>
+                        &nbsp;
+                        <p class="wind">15 km/hr</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/script.js" ></script>
+</body>
+</html>
